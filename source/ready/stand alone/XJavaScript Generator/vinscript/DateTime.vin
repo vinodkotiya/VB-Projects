@@ -1,0 +1,7 @@
+<!--Display the current date and time.---->
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+  var curDateTime = new Date()
+  document.write(curDateTime)
+//-->
+</SCRIPT>

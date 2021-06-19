@@ -1,0 +1,15 @@
+WELCOME = 88, 116, 506, 492, C, 66, 87, 484, 463, C
+CANCEL_PWD = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+CHANGE_PWD = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+COLLECT_CASH = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+CONFIRM_PWD = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+DEPOSIT = 0, 0, 0, 0, C, 88, 116, 506, 492, C
+Form1 = 0, 0, 418, 376, C, 22, 29, 440, 405, C
+WITHDRAWAL = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+frmSplash = 0, 0, 0, 0, C, 44, 58, 643, 544, C
+LOGOUT = 0, 0, 0, 0, C, 66, 87, 665, 573, C
+MENUSCREEN = 0, 0, 0, 0, C, 88, 116, 687, 602, C
+OVERDRAFT = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+RECEIPT = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+SEE_BALANCE = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+LOGINSCREEN = 22, 29, 710, 457, C, 110, 145, 528, 521, C

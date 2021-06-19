@@ -1,0 +1,49 @@
+<|--Search the web from many search engine.---->
+<!-- WEB SEARCH -->
+
+<!-- This goes in the HEAD of the html file -->
+
+<script Language="JavaScript">
+<!-- Copyright 2001, Sandeep Gangadharan (sivam@bol.net.in) -->
+<!-- For more free scripts go to http://web1.mtnl.net.in/~sivam/ -->
+
+<!--
+function searchWeb() {
+if (document.search.engines.selectedIndex==0) { window.location.href="http://www.altavista.com/cgi-bin/query?pg=q&what=web&fmt=.&q="+document.search.queryText.value; }
+if (document.search.engines.selectedIndex==1) { window.location.href="http://www.ask.com/main/askjeeves.asp?x=22&y=13&ask="+document.search.queryText.value; }
+if (document.search.engines.selectedIndex==2) { window.location.href="http://www.google.com/search?btnG=Google+Search&q="+document.search.queryText.value; }
+if (document.search.engines.selectedIndex==3) { window.location.href="http://www.goto.com/d/search/?type=home&tm=1&Keywords="+document.search.queryText.value; }
+if (document.search.engines.selectedIndex==4) { window.location.href="http://www.hotbot.com/search.html?SM=MC&_v=1.0&MT="+document.search.queryText.value; }
+if (document.search.engines.selectedIndex==5) { window.location.href="http://www.looksmart.com/r_search?look=&key="+document.search.queryText.value; }
+if (document.search.engines.selectedIndex==6) { window.location.href="http://www.lycos.com/cgi-bin/pursuit?query="+document.search.queryText.value; }
+if (document.search.engines.selectedIndex==7) { window.location.href="http://www.metacrawler.com/cgi-bin/nph-metaquery.p?general="+document.search.queryText.value; }
+if (document.search.engines.selectedIndex==8) { window.location.href="http://www.northernlight.com/nlquery.fcg?cb=0&search.x=35&search.y=9&qr="+document.search.queryText.value; }
+if (document.search.engines.selectedIndex==9) { window.location.href="http://search.yahoo.com/search?p="+document.search.queryText.value; }
+}
+// -->
+</script>
+
+<!-- This goes in the BODY of the html file -->
+
+<form name="search">
+<table bgcolor="c0c0c0" height="50">
+  <tr>
+    <td>&nbsp;
+       <select name="engines">
+         <option value="0" selected>AltaVista</option>
+         <option value="1">Ask Jeeves</option>
+         <option value="2">Google</option>
+         <option value="3">GoTo</option>
+         <option value="4">HotBot</option>
+         <option value="5">LookSmart</option>
+         <option value="6">Lycos</option>
+         <option value="7">MetaCrawler</option>
+         <option value="8">Northern Light</option>
+         <option value="9">Yahoo!</option>
+       </select>
+       <input type="text" size="25" value="Search web for ..." onFocus=select(); name="queryText">
+       <input type="button" value="Go" onClick="searchWeb()">&nbsp;
+    </td>
+  </tr>
+</table>
+</form>

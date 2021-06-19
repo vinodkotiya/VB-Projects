@@ -1,0 +1,24 @@
+*********************************************************************************************************
+                                 		LICENSE AGREEMENT
+*********************************************************************************************************
+INDRADHANUSH  is provided to you FREE of charge for noncommercial purpose.
+-> You can distribute this product to anyone freely.
+-> If you want to publish this product on a cd , you can but i would be greatfull to you if you informed me.
+-> If you are a programmer and get any clu for how to making these softwares,you can make them.
+-> If you want the source code of this software then contact me online or offline.
+
+This product is just made during my programming practice hence This software is not copyrighted and no rights have been reserved.
+
+It May be possible that some of the softwares included in this package are based on some other softwares currently in market.
+
+Some of the graphics and music (if any ) included in this package is the property of their respective owner/companies.
+
+*********************************************************************************************************
+      		Programmer:-   	VINOD KOTIYA
+				BE (Information Technology)
+				THIRD SEMESTER 
+ 				Bhopal Engg. College,BHOPAL
+				Fone +91-0755-2794428	
+				E-mail:- vinodkotiya24@rediffmail.com
+				Web:- http://vinodkotiya.tripod.com
+*********************************************************************************************************

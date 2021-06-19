@@ -1,0 +1,26 @@
+<!--Display the current date.--->
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+  function GetMonth(intMonth){
+    var MonthArray = new Array("January", "February", "March",
+                               "April", "May", "June",
+                               "July", "August", "September",
+                               "October", "November", "December") 
+    return MonthArray[intMonth] 	  	 
+    }
+  function getDateStr(){
+    var today = new Date()
+    var year = today.getYear()
+    if(year<1000) year+=1900
+    var todayStr = GetMonth(today.getMonth()) + " " + today.getDate()
+    todayStr += ", " + year
+    return todayStr
+    }
+//-->
+</SCRIPT>
+
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+    document.write(getDateStr())
+//-->
+</SCRIPT>

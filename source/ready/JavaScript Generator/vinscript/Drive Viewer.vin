@@ -1,0 +1,8 @@
+<!---View the computer`s drive.--->
+<!-- Found at the JavaScript Place. http://www.javaplace.co.uk -->
+<form action="file:///a|/"><input type="submit" value="a:\ drive"></form>
+<p>
+<form action="file:///c|/"><input type="submit" value="c:\ drive"></form>
+<p>
+<form action="file:///d|/"><input type="submit" value="d:\ drive"></form>
+<p>

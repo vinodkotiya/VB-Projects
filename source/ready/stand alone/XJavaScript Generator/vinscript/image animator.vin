@@ -1,0 +1,54 @@
+<inputYes>
+<input1>
+image1
+path of image1.jpg
+<input2>
+image2
+path of image2.jpg
+<input3>
+image3
+path of image3.jpg
+<input4>
+Link
+http://www.vinsoft.com
+<discription>
+Make animation with javascripts.
+<end By:- vinod kotiya>
+<!-- IMAGE ANIMATOR -->
+
+<!-- This goes into the HEAD of the html file -->
+
+<script language="javascript">
+<!-- Copyright 2001, Sandeep Gangadharan (sivam@bol.net.in) -->
+<!-- For more free scripts go to http://web1.mtnl.net.in/~sivam/ -->
+<!--
+var animate=0;
+function runBanner() {
+var photos=new Array()
+photos[0]="input1" // change the name of the images at the left
+photos[1]="input2" // you can add as many images as you want to this array
+photos[2]="input3"
+load=new Image(217,54); // change the #s at the left to match the size of your images
+load.src="input1";
+load.src="input2";
+load.src="input3";
+
+
+  if (photos.length > 0) {
+   document.imgs.banner.src=photos[animate];
+   animate++;
+  if (animate==3) animate=0;  // change the # 3 at the left to the maximum # of images you want included in your animation
+   window.setTimeout("runBanner()", 2000); }   // change the # on the left to adjust the speed of the
+ }                                             // animation. The smaller the # the faster the speed
+//-->
+</script>
+
+<!-- Note the script in the BODY tag -->
+
+<body onLoad="runBanner();">
+
+<!-- This goes into the BODY of the html file -->
+
+ <form name="imgs">
+  
+<a href="input4"><img src=" " border="0" width="217" height="54" name="banner"></a></form>

@@ -1,0 +1,32 @@
+<inputYes>
+<input1>
+Punch Que:
+Why did a chicken cross the road ?
+<input2>
+Punch Ans:
+To get to the other side.
+<input3>
+no
+no
+<input4>
+no
+no
+<description>
+Put a punchline on your webpage.
+<end By:- vinod kotiya>
+<SCRIPT LANGUAGE="LiveScript">
+<!--  hide this script from some browsers
+function Punchline () {
+   document.write ("<BODY BGcolor=#00EE00><P><I>input2</P></I>") ;
+}
+-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>Punchline</H1>
+<H2>a javascript Punchline </H2>
+<P>input1</P>
+<FORM>
+<P><INPUT TYPE="button"  VALUE="Punchline" onClick="Punchline()">
+</P>
+</FORM>

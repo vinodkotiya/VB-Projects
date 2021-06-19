@@ -1,0 +1,18 @@
+<inputYes>
+<input1>
+Image
+Enter path of image.gif ...
+<input2>
+Text Color
+blue
+<input3>
+Topmargin
+40
+<input4>
+Leftmargin
+30
+<description>
+An image will be shown in background.
+<end By:- vinod kotiya>                                                   
+<body background = "input1" text = input2 topmargin = "input3" leftmargin = "input4">
+<!-- By vinod kotiya . Type your content below-->

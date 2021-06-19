@@ -1,0 +1,83 @@
+<inputYes>
+<input1>
+Image
+path of image.jpg 
+<input2>
+Speed
+10
+<input3>
+Angle
+45
+<input4>
+no
+no
+<discription>
+The image bounces around the screen.
+<end By:- vinod kotiya>
+<script language="JavaScript">
+<!-- Trapped Script by kurt.grigg@virgin.net
+P=new Image();
+P.src="input1";  //Pre-load your image here!
+S=input2; //Speed!
+D=input3; //Angle!
+
+// Nothing needs altering below!
+NS4=(document.layers);
+NS6=(document.getElementById&&!document.all);
+IE4=(document.all);
+L=null;
+if (NS4){
+document.write("<LAYER NAME='netscape' LEFT=0 TOP=0><img src="+P.src+"></LAYER>");
+}
+if (NS6){
+document.write("<img id='n6' src='"+P.src+"' style='position:absolute;top:0px;left:0px'>");
+}
+if (IE4){
+document.write("<div style='position:absolute;top:0px;left:0px'><div style='position:relative'>");
+document.write("<img id='explorer' src='"+P.src+"' style='position:absolute;top:0px;left:0px'>");
+document.write("</div></div>")
+}
+VB=0;
+HB=0;
+Y=10;
+X=10;
+function Move(){
+var H=(NS6||NS4)?window.innerHeight:document.body.clientHeight;
+var W=(NS6||NS4)?window.innerWidth:document.body.clientWidth;
+var YS=(NS6||NS4)?window.pageYOffset:document.body.scrollTop;
+var XS=(NS6||NS4)?window.pageXOffset:document.body.scrollLeft;
+var BY=-P.height;
+var BX=-P.width;
+y=S*Math.sin(D*Math.PI/180);
+x=S*Math.cos(D*Math.PI/180);
+Y+=y;
+X+=x;
+VB=180-D;
+HB=0-D;
+//Corner rebounds! not necessary but looks nice.
+if ((Y < 1) && (X < 1)) {Y=1;X=1;D=45;}
+if ((Y < 1) && (X > W+BX)) {Y=1;X=W+BX;D=135;}
+if ((Y > H+BY) && (X < 1)) {Y=H+BY;X=1;D=315;}
+if ((Y > H+BY) && (X > W+BX)) {Y=H+BY;X=W+BX;D=225;}
+//Edge rebounds!
+if (Y < 1) {Y=1;D=HB;}  
+if (Y > H+BY) {Y=H+BY;D=HB;}  
+if (X < 1) {X=1;D=VB;} 
+if (X > W+BX) {X=W+BX;D=VB;} 
+
+if (NS4){
+L=document.netscape
+}
+if (NS6){
+L=document.getElementById("n6").style
+}
+if (IE4){
+L=explorer.style
+}
+L.top=Y+YS;
+L.left=X+XS;
+setTimeout('Move()',10);
+}
+Move();
+//-->
+</script>

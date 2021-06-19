@@ -1,0 +1,167 @@
+[Root]
+Most Recent Package=vin utility kit pkg1
+
+
+[Package|vin utility kit pkg1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=c:\pack
+
+[Package|vin utility kit pkg1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|vin utility kit pkg1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|vin utility kit pkg1|Files Found]
+
+[Package|vin utility kit pkg1|Files Released]
+
+[Package|vin utility kit pkg1|Missing Dependency Information]
+F:\vinkit\web.exe=
+F:\vinkit\vintimer.exe=
+F:\vinkit\vinreminder.exe=
+F:\vinkit\Indradhanush.exe=
+F:\vinkit\fonedirectory.exe=
+F:\vinkit\credit.exe=
+F:\vinkit\break.exe=
+F:\vinkit\all2html.exe=
+F:\vinkit\about.exe=
+F:\vinkit\convert.exe=
+
+[Package|vin utility kit pkg1|Out-of-Date Dependency Information]
+C:\WINDOWS\SYSTEM32\scrrun.dll=
+
+[Package|vin utility kit pkg1|Files Added]
+f:\vinkit\web.exe=
+f:\vinkit\vintimer.exe=
+f:\vinkit\vinreminder.exe=
+f:\vinkit\indradhanush.exe=
+f:\vinkit\fonedirectory.exe=
+f:\vinkit\credit.exe=
+f:\vinkit\break.exe=
+f:\vinkit\all2html.exe=
+f:\vinkit\about.exe=
+F:\vinkit\convert.exe=
+
+[Package|vin utility kit pkg1|Files Removed]
+
+[Package|vin utility kit pkg1|Files In Project]
+F:\vinkit\vin_utility.exe=Yes
+C:\WINDOWS\SYSTEM32\msvbvm60.dll=Yes
+C:\WINDOWS\SYSTEM32\oleaut32.dll=Yes
+C:\WINDOWS\SYSTEM32\olepro32.dll=Yes
+C:\WINDOWS\SYSTEM32\asycfilt.dll=Yes
+C:\WINDOWS\SYSTEM32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+F:\vinkit\web.exe=Yes
+F:\vinkit\vintimer.exe=Yes
+F:\vinkit\vinreminder.exe=Yes
+F:\vinkit\Indradhanush.exe=Yes
+F:\vinkit\fonedirectory.exe=Yes
+F:\vinkit\credit.exe=Yes
+F:\vinkit\break.exe=Yes
+F:\vinkit\all2html.exe=Yes
+F:\vinkit\about.exe=Yes
+C:\WINDOWS\SYSTEM32\scrrun.dll=Yes
+C:\WINDOWS\SYSTEM32\msvcrt.dll=Yes
+F:\vinkit\convert.exe=Yes
+
+[Package|vin utility kit pkg1|Configure Registry Files]
+Applicable=No
+
+[Package|vin utility kit pkg1|Configure Remote Servers]
+Applicable=No
+
+[Package|vin utility kit pkg1|Install Locations]
+F:\vinkit\vin_utility.exe=$(ProgramFiles)\vinsoft\VIN Utility Kit
+C:\WINDOWS\SYSTEM32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+F:\vinkit\web.exe=$(ProgramFiles)\vinsoft\VIN Utility Kit
+F:\vinkit\vintimer.exe=$(ProgramFiles)\vinsoft\VIN Utility Kit
+F:\vinkit\vinreminder.exe=$(ProgramFiles)\vinsoft\VIN Utility Kit
+F:\vinkit\Indradhanush.exe=$(ProgramFiles)\vinsoft\VIN Utility Kit
+F:\vinkit\fonedirectory.exe=$(ProgramFiles)\vinsoft\VIN Utility Kit
+F:\vinkit\credit.exe=$(ProgramFiles)\vinsoft\VIN Utility Kit
+F:\vinkit\break.exe=$(ProgramFiles)\vinsoft\VIN Utility Kit
+F:\vinkit\all2html.exe=$(ProgramFiles)\vinsoft\VIN Utility Kit
+F:\vinkit\about.exe=$(ProgramFiles)\vinsoft\VIN Utility Kit
+C:\WINDOWS\SYSTEM32\scrrun.dll=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\msvcrt.dll=$(WinSysPathSysFile)
+F:\vinkit\convert.exe=$(AppPath)
+
+[Package|vin utility kit pkg1|Configure Shared Files]
+Applicable=Yes
+F:\vinkit\vin_utility.exe=No
+F:\vinkit\web.exe=No
+F:\vinkit\vintimer.exe=No
+F:\vinkit\vinreminder.exe=No
+F:\vinkit\Indradhanush.exe=No
+F:\vinkit\fonedirectory.exe=No
+F:\vinkit\credit.exe=No
+F:\vinkit\break.exe=No
+F:\vinkit\all2html.exe=No
+F:\vinkit\about.exe=No
+F:\vinkit\convert.exe=No
+
+[Package|vin utility kit pkg1|Distribution]
+Type=single
+Size=
+Title=VIN UTILITY KIT
+
+[Package|vin utility kit pkg1|IconGroups]
+Group0=VIN UTILITY KIT v1.0
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|vin utility kit pkg1|VIN UTILITY KIT v1.0]
+Icon1=vin_utility.exe
+Title1=VIN UTILITY KIT
+StartIn1=$(AppPath)
+Key1=Icon1
+Icon2=break.exe
+Title2=Have A Break
+StartIn2=$(AppPath)
+Key2=Icon4
+Icon3=web.exe
+Title3=VIN Web Compiler
+StartIn3=$(AppPath)
+Key3=Icon3
+Icon4=all2html.exe
+Title4=VIN ALL2HTML Converter
+StartIn4=$(AppPath)
+Key4=Icon5
+Icon5=fonedirectory.exe
+Title5=VIN Fone Directory
+StartIn5=$(AppPath)
+Key5=Icon6
+Icon6=vintimer.exe
+Title6=VIN Timer
+StartIn6=$(AppPath)
+Key6=Icon7
+Icon7=convert.exe
+Title7=vin convert centre
+StartIn7=$(AppPath)
+Key7=Icon15
+
+[Package|vin utility kit pkg1|Package]
+PackageFolder=c:\pack
+ProjectFolder=F:\VB PROJECTS\ready\utility kit
+ServerSideCab=
+File1=c:\pack\setup.exe
+File2=c:\pack\Setup.Lst
+File3=c:\pack\vin_utility.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

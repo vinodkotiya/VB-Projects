@@ -1,0 +1,68 @@
+<inputYes>
+<input1>
+Message1
+Enter your message here ...
+<input2>
+Message2
+Enter your message here ...
+<input3>
+Speed
+90
+<input4>
+Pause Time(mSec) :
+1000
+<description>
+Type out the text in the status bar.
+<end By:- vinod kotiya>
+<Script LANGUAGE="JavaScript">
+<!-- Hide this from older browsers
+// This script was written by Protoplasm
+// http://www.geocities.com/ResearchTriangle/4279
+
+var timerID = null;
+var Running = false;
+var message = new Array();
+var currentMessage = 0;
+var offset = 0;
+var typespeed =input3; // This is the amount of time between letters
+var MessagePause =input4; // This is the amount of time that the full message stays visible
+message[0] = "input1"
+message[1] = "input2"
+
+function Display() {
+var text = message[currentMessage];
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++
+
+var partMessage = text.substring(0, offset + 1);
+
+window.status = partMessage;
+offset++ 
+timerID = setTimeout("Display()", typespeed);
+Running = true;
+} else {
+offset = 0;
+currentMessage++
+if (currentMessage == message.length)
+currentMessage = 0;
+timerID = setTimeout("Display()", MessagePause);
+Running = true;
+}
+}
+
+function stop() {
+if (Running)
+clearTimeout(timerID);
+Running = false
+}
+
+function start() {
+stop();
+Display();
+}
+
+start(); 
+
+// end hide -->
+</Script>

@@ -1,0 +1,27 @@
+<!--A simple clock in a text box.--->
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+function jsClock(){
+  var time = new Date()
+  var hour = time.getHours()
+  var minute = time.getMinutes()
+  var second = time.getSeconds()
+  var temp = "" + ((hour > 12) ? hour - 12 : hour)
+  if(hour==0) temp = "12"
+  if(temp.length==1) temp = " " + temp
+  temp += ((minute < 10) ? ":0" : ":") + minute
+  temp += ((second < 10) ? ":0" : ":") + second
+  temp += (hour >= 12) ? " PM" : " AM"
+  document.clockForm.digits.value = temp
+  id = setTimeout("jsClock()",1000)
+  }
+//-->
+</SCRIPT>
+
+<BODY ONLOAD="jsClock()"> 
+
+<FORM NAME="clockForm">
+<FONT face="Courier New,Courier" size=3><B>
+<INPUT TYPE="text" NAME="digits" SIZE=11 VALUE="Loading"></B>
+</FONT>
+</FORM>

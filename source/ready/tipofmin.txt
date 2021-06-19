@@ -1,0 +1,11 @@
+WEB COMPILER :- Select the santance and click any menu , coding will be done automatically
+WEB COMPILER :- An HTML tutorial by vinod kotiya is also provided. Click on File ->Sample web page.
+WEB COMPILER :- In WEB COMPILER you can make various pages by selecting and clicking.
+WEB COMPILER :- It gives Select and Click method to create webpages.
+ALL2HTML CONVERTER :- It converts multiple text files to html in seconds.   
+ALL2HTML CONVERTER :- You have 3 html coding options provided.
+FONE DIRECTORY :- Store fone no., date of births and other information.
+FONE DIRECTORY :- You have many modes to retrive any information.
+REMIND ME LATER :- It will remind your message before ,on ,after any date.
+HAVE A BREAK :- This utility will give you a break by changing the screen.
+HAVE A BREAK :- This is better than a screen saver because a screen saver prevent fosphores burning of your monitor but this utility prevents your EYE's.  

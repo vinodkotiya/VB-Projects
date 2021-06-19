@@ -1,0 +1,103 @@
+[Root]
+Most Recent Package=setup vin script generator
+
+
+[Package|setup vin script generator|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=d:\script
+
+[Package|setup vin script generator|Configure DAO ISAMs]
+Applicable=No
+
+[Package|setup vin script generator|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|setup vin script generator|Files Found]
+
+[Package|setup vin script generator|Files Released]
+
+[Package|setup vin script generator|Missing Dependency Information]
+
+[Package|setup vin script generator|Out-of-Date Dependency Information]
+F:\WINDOWS\system32\COMDLG32.OCX=
+
+[Package|setup vin script generator|Files Added]
+E:\VB PROJECTS\ready\stand alone\JavaScript Generator\vinscript\Alarm Clock.vin=
+E:\VB PROJECTS\ready\stand alone\JavaScript Generator\vinscript\Bouncing Image.vin=
+
+[Package|setup vin script generator|Files Removed]
+
+[Package|setup vin script generator|Files In Project]
+E:\VB PROJECTS\ready\stand alone\JavaScript Generator\scriptgenerator.exe=Yes
+F:\WINDOWS\system32\msvbvm60.dll=Yes
+F:\WINDOWS\system32\oleaut32.dll=Yes
+F:\WINDOWS\system32\olepro32.dll=Yes
+F:\WINDOWS\system32\asycfilt.dll=Yes
+F:\WINDOWS\system32\stdole2.tlb=Yes
+F:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+F:\WINDOWS\system32\RICHTX32.OCX=Yes
+F:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+F:\WINDOWS\system32\COMDLG32.OCX=Yes
+F:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+F:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+F:\WINDOWS\system32\VB6STKIT.DLL=Yes
+F:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+E:\VB PROJECTS\ready\stand alone\JavaScript Generator\vinscript\Alarm Clock.vin=Yes
+E:\VB PROJECTS\ready\stand alone\JavaScript Generator\vinscript\Bouncing Image.vin=Yes
+
+[Package|setup vin script generator|Configure Registry Files]
+Applicable=No
+
+[Package|setup vin script generator|Configure Remote Servers]
+Applicable=No
+
+[Package|setup vin script generator|Install Locations]
+E:\VB PROJECTS\ready\stand alone\JavaScript Generator\scriptgenerator.exe=$(AppPath)
+F:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+F:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+F:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+F:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+F:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+F:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+F:\WINDOWS\system32\RICHTX32.OCX=$(WinSysPath)
+F:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+F:\WINDOWS\system32\COMDLG32.OCX=$(WinSysPath)
+F:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+F:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+F:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+F:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+E:\VB PROJECTS\ready\stand alone\JavaScript Generator\vinscript\Alarm Clock.vin=$(AppPath)\vinscript
+E:\VB PROJECTS\ready\stand alone\JavaScript Generator\vinscript\Bouncing Image.vin=$(AppPath)\vinscript
+
+[Package|setup vin script generator|Configure Shared Files]
+Applicable=Yes
+E:\VB PROJECTS\ready\stand alone\JavaScript Generator\scriptgenerator.exe=No
+E:\VB PROJECTS\ready\stand alone\JavaScript Generator\vinscript\Alarm Clock.vin=No
+E:\VB PROJECTS\ready\stand alone\JavaScript Generator\vinscript\Bouncing Image.vin=No
+
+[Package|setup vin script generator|Distribution]
+Type=single
+Size=
+Title=vinod kotiya's vin scriptgenerator
+
+[Package|setup vin script generator|IconGroups]
+Group0=VINSOFT
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|setup vin script generator|VINSOFT]
+Icon1=scriptgenerator.exe
+Title1=vin scriptgenerator
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|setup vin script generator|Package]
+PackageFolder=d:\script
+ProjectFolder=E:\VB PROJECTS\ready\stand alone\JavaScript Generator
+ServerSideCab=
+File1=d:\script\setup.exe
+File2=d:\script\Setup.Lst
+File3=d:\script\scriptgenerator.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

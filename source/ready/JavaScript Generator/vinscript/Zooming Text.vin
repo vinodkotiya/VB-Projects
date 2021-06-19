@@ -1,0 +1,97 @@
+<inputYes>
+<input1>
+Message1
+Enter your message here ...
+<input2>
+Color1
+Red
+<input3>
+Message3
+Enter your message here ...
+<input4>
+Color2
+Green
+<description>
+Make the zoom effection for your text.
+<end By:- vinod kotiya>
+<Script Language="Javascript">
+<!-- Hiding
+/*	Script by Lefteris Haritou	
+	Copyright ©1998 
+	http://www.geocities.com/~lef
+	This Script is free as long 
+	as you keep the above credit !
+*/
+bname=navigator.appName;
+bversion=parseInt(navigator.appVersion)
+if ((bname=="Netscape" && bversion>=4) || (bname=="Microsoft Internet Explorer" && bversion>=4)){
+if (bname=="Netscape"){
+brows=true
+del=30
+}
+else{
+brows=false
+del=80
+}
+var msg=0;
+var z=0;
+var timer1;
+var message= new Array();
+var color= new Array();
+var values= new Array('-6','-5','-4','-3','-2','-1','+1','+2','+3','+4','+5','+6')
+// Put here your own messages. Add as many as you wan't (Do not edit anything else in the Script except the lines below)
+message[0]="input1"
+color[0]="input2"
+message[1]="input3"
+color[1]="input4"
+
+// Put here your own messages. Add as many as you wan't (Do not edit anything else in the Script except the lines above)
+
+function start(){
+if ((bname=="Netscape" && bversion>=4) || (bname=="Microsoft Internet Explorer" && bversion>=4)){
+if(z<values.length){
+if (brows){
+document.layers['text'].document.writeln('<P Class="main" Align="Center"><font color="'+color[msg]+'" size="'+values[z]+'" face="Arial"><NOBR>'+message[msg]+'</NOBR></font></P>')
+document.layers['text'].document.close();
+}
+else{
+text.innerHTML='<Pre><P Class="main" Align="Center"><font color="'+color[msg]+'" size="'+values[z]+'" face="Arial"><NOBR>'+message[msg]+'</NOBR></font></P></Pre>'
+}
+z++;
+timer1=window.setTimeout('start()',del)
+}
+else
+chg();
+}
+}
+function stop(){
+if ((bname=="Netscape" && bversion>=4) || (bname=="Microsoft Internet Explorer" && bversion>=4))
+window.clearTimeout(timer1);
+window.clearTimeout(timer2);
+}
+
+function chg(){
+if (brows){
+document.layers['text'].document.writeln('')
+document.layers['text'].document.close();
+}
+else
+text.innerHTML='';
+if(msg<message.length-1){
+msg++;
+}
+else
+msg=0;
+z=0;
+timer2=window.setTimeout('start()',1000)
+}
+}
+
+// done hiding -->
+</Script>
+
+<BODY BGCOLOR="#000000" LINK="#FF0000" VLINK="#FF0000" ALINK="#FFFF00" TEXT="#000000" onLoad="start()" onUnload="stop()">
+<Div id="text" style="position: absolute; left: 4; top: 80">
+</Div>
+<Layer name="text" left=4 top=80>
+</Layer>

@@ -1,0 +1,32 @@
+[OPTIONS]
+Compiled File=vinhelp.chm-temp
+Title=VIN Setup Wizard
+Contents File=vinhelp.hhc
+Index File=vinhelp.hhk
+Default topic=VIN Setup Wizard.htm
+Error log file=
+Display compile progress=No
+Display compile notes=No
+Full-text search=No
+Binary Index=No
+
+[WINDOWS]
+
+[FILES]
+Step5.htm
+Step4.htm
+Step3.htm
+Step2.htm
+Step1.htm
+Introduction.htm
+Tutorial.htm
+Credits.htm
+BSSCDHTM.js
+#BSSC
+[ALIAS]
+#include vinhelp.ali
+
+[MAP]
+
+[TEXT POPUPS]
+

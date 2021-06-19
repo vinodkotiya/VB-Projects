@@ -1,0 +1,35 @@
+<inputYes>
+<input1>
+Caption of Link1
+Hohoo.com
+<input2>
+URL of Link1:
+www.hohoo.com
+<input3>
+Caption of Link2
+ColDMaiL.com
+<input4>
+URL of Link2 :
+www.coldmail.com
+<discription>
+A list box menu with a "Go" button.
+<end By:- vinod kotiya>
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+  function loadPage(pageURL){
+    location.href = pageURL.options[pageURL.selectedIndex].value
+    }
+//-->
+</SCRIPT>
+
+<FORM>
+<FONT SIZE=4>     
+<P>&nbsp;&nbsp;
+<SELECT NAME="selectMenu2" SIZE=5>
+<OPTION VALUE="input2">input1</OPTION>
+<OPTION VALUE="input4">input3</OPTION>
+</SELECT>
+</FONT>
+<BR>&nbsp;&nbsp;&nbsp;
+<INPUT TYPE=BUTTON VALUE="GO" onClick = "loadPage(this.form.selectMenu2)"
+</FORM>

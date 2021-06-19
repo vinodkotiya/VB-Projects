@@ -1,0 +1,40 @@
+<!--Star effect for the mouse cursor. --->
+<script language="JavaScript">
+<!--  Mouse Stars by kurt.grigg@virgin.net
+
+//To add more stars simply add more colours in below array!!
+colours=new Array('ff0000','00ff00','3366ff','ff00ff','ffa500','ffffff','fff000')
+
+//Alter nothing below!!
+amount=colours.length;
+ns=(document.layers)?1:0,step=0.2,currStep=0,my=0,mx=0;
+if (ns){
+for (i=0; i < amount; i++)
+document.write('<LAYER NAME="nsstars'+i+'" BGCOLOR='+colours[i]+' CLIP="0,0,2,2"></LAYER>');
+}
+else{
+document.write('<div id="ie" style="position:absolute;top:0;left:0;"><div style="position:relative">');
+for (i=0; i < amount; i++)
+document.write('<span id="iestars" style="position:absolute;top:0;left:0;width:2px;height:2px;background:'+colours[i]+';font-size:2px"></span>');
+document.write('</div></div>');
+}
+(document.layers)?window.captureEvents(Event.MOUSEMOVE):0;
+function Mouse(evnt){
+ my = (document.layers)?evnt.pageY:event.y;
+ mx = (document.layers)?evnt.pageX:event.x;
+}
+(document.layers)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+function stars(){
+if (!ns)ie.style.top=document.body.scrollTop;
+for (i=0; i < amount; i++)
+ {
+ var layer=(document.layers)?document.layers["nsstars"+i]:iestars[i].style; 
+ layer.top= my+Math.cos((20*Math.sin(currStep/20))+i*70)*100*(Math.sin(10+currStep/10)+0.2)*Math.cos((currStep + i*25)/10); 
+ layer.left=mx+Math.sin((20*Math.sin(currStep/20))+i*70)*180*(Math.sin(10+currStep/10)+0.2)*Math.cos((currStep + i*25)/10);
+ }
+currStep+=step;
+setTimeout('stars()',10);
+}
+window.onload=stars;
+//-->
+</script>

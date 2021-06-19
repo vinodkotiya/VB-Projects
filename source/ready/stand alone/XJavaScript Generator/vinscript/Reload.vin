@@ -1,0 +1,17 @@
+<inputYes>
+<input1>
+Caption of the Link
+Reload
+<input2>
+no
+no
+<input3>
+no
+no
+<input4>
+no
+no
+<discription>
+The page will reload when you click on the link.
+<end By:- vinod kotiya>
+<a href="JavaScript:window.location.reload()">input1</a>

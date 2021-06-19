@@ -1,0 +1,19 @@
+<inputYes>
+<input1>
+Message
+Enter your message here ...
+<input2>
+no
+no
+<input3>
+no
+no
+<input4>
+no
+no
+<description>
+A message will popup whenever page is loaded.
+<end By:- vinod kotiya>
+<SCRIPT LANGUAGE="JavaScript">
+alert("input1")
+</SCRIPT>

@@ -1,0 +1,54 @@
+<inputYes>
+<input1>
+Message
+Enter your message here ...
+<input2>
+Speed
+90
+<input3>
+no
+no
+<input4>
+no
+no
+<description>
+A scrolling message in the status bar.
+<end By:- vinod kotiya>
+<Script LANGUAGE="JavaScript">
+<!-- Hide this from older browsers
+// This script was written by Protoplasm
+// http://www.geocities.com/ResearchTriangle/4279
+var Text = "input1";
+var Speed =input2;
+
+var Count = 0;
+var timerID = null;
+var TimerRunning = false;
+
+var i = 0;
+while (i ++ < 140)
+Text = " " + Text;
+
+function Scroll(){
+window.status = Text.substring(Count++, Text.length);
+if (Count == Text.length)
+Count = 0;
+timerID = setTimeout("Scroll()", Speed);
+TimerRunning = true;
+}
+
+function Start(){
+Stop();
+Scroll();
+}
+
+function Stop(){
+if(TimerRunning)
+clearTimeout(timerID);
+TimerRunning = false;
+}
+
+Start(); 
+
+// end hide -->
+</Script>

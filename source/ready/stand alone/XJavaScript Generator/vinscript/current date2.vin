@@ -1,0 +1,32 @@
+<!-- Display the current date with day of the week. --->
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+  function GetDay(intDay){
+    var DayArray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", 
+                         "Thursday", "Friday", "Saturday")
+    return DayArray[intDay]
+    }
+
+  function GetMonth(intMonth){
+    var MonthArray = new Array("January", "February", "March",
+                               "April", "May", "June",
+                               "July", "August", "September",
+                               "October", "November", "December") 
+    return MonthArray[intMonth] 	  	 
+    }
+  function getDateStrWithDOW(){
+    var today = new Date()
+    var year = today.getYear()
+    if(year<1000) year+=1900
+    var todayStr = GetDay(today.getDay()) + ", "
+    todayStr += GetMonth(today.getMonth()) + " " + today.getDate()
+    todayStr += ", " + year
+    return todayStr
+    }
+//-->
+</SCRIPT>
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+    document.write(getDateStrWithDOW())
+//-->
+</SCRIPT>

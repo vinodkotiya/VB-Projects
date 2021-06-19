@@ -1,0 +1,39 @@
+<inputYes>
+<input1>
+Message
+Enter your message here ...
+<input2>
+Speed 
+100
+<input3>
+no
+no
+<input4>
+no
+no
+<description>
+Bubble effect for the text in the status bar.
+<end By:- vinod kotiya>
+<script language="Javascript">
+<!--
+// This script was found at the JavaScript Place. http://www.javaplace.co.uk
+var text="input1"
+var speed =input2
+
+var x = 0
+function bb() {
+var a = text.substring(0,x)
+var b = text.substring(x,x+1).toUpperCase()
+var c = text.substring(x+1,text.length)
+window.status = a + b + c
+if (x == text.length) {
+x = 0
+}
+else {
+x++
+}
+setTimeout("bb()",speed)
+}
+bb();
+//-->
+</script>

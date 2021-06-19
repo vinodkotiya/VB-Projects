@@ -1,0 +1,68 @@
+<inputYes>
+<input1>
+Caption of Link1
+Hohoo.com
+<input2>
+URL of Link1:
+www.hohoo.com
+<input3>
+Caption of Link2
+ColDMaiL.com
+<input4>
+URL of Link2 :
+www.coldmail.com
+<discription>
+A nice menu pop up on a click of an button.
+<end By:- vinod kotiya>
+<!-- This goes in the HEAD of the html file -->
+
+<script language="javascript">
+<!-- BUTTON POP-UP MENU -->
+<!-- Copyright 2001, Sandeep Gangadharan. -->
+<!-- Home Page: http://web1.mtnl.net.in/~sivam/ -->
+<!--
+function showIt() {
+  if (document.layers) {document.layers["layer1"].visibility='hide';}
+  else {document.all["layer1"].style.visibility='hidden';}
+  }
+function hideIt() {
+  if (document.layers) {document.layers["layer1"].visibility='show';}
+  else {document.all["layer1"].style.visibility='visible';}
+}
+// -->
+</script>
+
+</head>
+
+<style>
+input {border-style: ridge;}
+a:hover {text-decoration: underline}
+</style>
+
+<body>
+
+<span id="layer" style="position:absolute; top:17; left:20; width:250; height:90; visibility:show">
+<script>
+<!--
+function buttonText(type) {
+  if (type=="Hide Menu ") {document.menu.button.value="Show Menu";}
+  else {document.menu.button.value="Hide Menu ";}
+   showIt();
+  if (document.menu.button.value=="Hide Menu ") {hideIt();}
+}
+// -->
+
+<!-- change the value of 'top' and 'left' in the layers properties below to place the menu
+in the desired position matching the placement of the button -->
+</script>
+<form name="menu">
+<input type="button" name="button" onClick="buttonText(value);" value="Show Menu" />
+</form>
+</span>
+<div id="layer1" style="position:absolute; top:40; left:20; width:250; height:90; visibility:hidden">
+<table bgcolor="yellow" border="1" cellpadding="2" cellspacing="0">
+
+<tr><td><a href="input2" style="text-decoration: none"><font face="arial" size="1"><b>input1</b></font></a></td></tr>
+<tr><td><a href="input4" style="text-decoration: none"><font face="arial" size="1"><b>input3</b></font></a></td></tr>
+</table>
+</div>

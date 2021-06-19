@@ -1,0 +1,38 @@
+<!---Display the clock in the status bar.--->
+<Script LANGUAGE="JavaScript">
+<!-- Hide this from older browsers
+// This script was written by Protoplasm
+// http://www.geocities.com/ResearchTriangle/4279
+
+var timerID = null;
+var TimerRunning = false;
+
+function stop(){
+if(TimerRunning)
+clearTimeout(timerID);
+TimerRunning = false;
+}
+
+function display() {
+var thedate = new Date();
+var hours = thedate.getHours();
+var Min = thedate.getMinutes();
+var Sec = thedate.getSeconds();
+var TimeV = "" + ((hours >12) ? hours -12 :hours)
+TimeV += ((Min < 10) ? ":0" : ":") + Min
+TimeV += ((Sec < 10) ? ":0" : ":") + Sec
+TimeV += (hours >= 12) ? " P.M." : " A.M."
+window.status = TimeV;
+timerID = setTimeout("display()",1000);
+TimerRunning = true;
+}
+
+function start() {
+stop();
+display();
+}
+
+start();
+
+// end hide -->
+</Script>

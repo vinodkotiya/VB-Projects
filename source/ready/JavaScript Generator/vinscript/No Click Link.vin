@@ -1,0 +1,17 @@
+<inputYes>
+<input1>
+Caption
+Hohoo.com
+<input2>
+URL:
+vinsoft.com
+<input3>
+no
+no
+<input4>
+no
+no
+<discription>
+Just move your mouse over the link. You dont have to click it.
+<end By:- vinod kotiya>
+<a href="input2" onMouseover="window.location=this.href">input1</a>

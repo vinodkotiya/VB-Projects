@@ -1,0 +1,77 @@
+[Root]
+Most Recent Package=Internet Package 1
+Most Recent Deploy=Folder Deployment 1
+
+
+[Package|Internet Package 1|Root]
+SubWizProgID=PDWizard.InetCABPkgSubWiz
+BuildFolder=F:\VB PROJECTS\activex\Package
+Controls Design-Time Support=Yes
+
+[Package|Internet Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Internet Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Internet Package 1|Files Found]
+
+[Package|Internet Package 1|Files Released]
+
+[Package|Internet Package 1|Missing Dependency Information]
+
+[Package|Internet Package 1|Out-of-Date Dependency Information]
+
+[Package|Internet Package 1|Files Added]
+C:\WINDOWS\System32\MsStkPrp.dll=This file is needed for usercontrol design-time support.
+
+[Package|Internet Package 1|Files Removed]
+
+[Package|Internet Package 1|Files In Project]
+F:\VB PROJECTS\activex\vincolproj.ocx=Yes
+C:\WINDOWS\SYSTEM32\msvbvm60.dll=Yes
+C:\WINDOWS\SYSTEM32\oleaut32.dll=Yes
+C:\WINDOWS\SYSTEM32\olepro32.dll=Yes
+C:\WINDOWS\SYSTEM32\asycfilt.dll=Yes
+C:\WINDOWS\SYSTEM32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM32\MSSTKPRP.DLL=Yes
+
+[Package|Internet Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Internet Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Internet Package 1|Install Locations]
+
+[Package|Internet Package 1|Configure Shared Files]
+Applicable=
+
+[Package|Internet Package 1|ComponentInfo]
+vincolproj.ocx=thiscab
+msvbvm60.dll=http://activex.microsoft.com/controls/vb6/VBRun60.cab
+oleaut32.dll=http://activex.microsoft.com/controls/vb6/VBRun60.cab
+olepro32.dll=http://activex.microsoft.com/controls/vb6/VBRun60.cab
+asycfilt.dll=http://activex.microsoft.com/controls/vb6/VBRun60.cab
+stdole2.tlb=http://activex.microsoft.com/controls/vb6/VBRun60.cab
+COMCAT.DLL=http://activex.microsoft.com/controls/vb6/VBRun60.cab
+MSSTKPRP.DLL=http://activex.microsoft.com/controls/vb6/MsStkPrp.cab
+
+[Package|Internet Package 1|ObjectInfo]
+UserControl1=true;true
+
+[Package|Internet Package 1|Package]
+PackageFolder=F:\VB PROJECTS\activex\Package
+ProjectFolder=F:\VB PROJECTS\activex
+ServerSideCab=F:\VB PROJECTS\activex\Package\vincolproj.CAB
+File1=F:\VB PROJECTS\activex\Package\vincolproj.CAB
+File2=F:\VB PROJECTS\activex\Package\vincolproj.HTM
+Handler1=PDWizard.WebPostDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+
+[Deploy|Folder Deployment 1|Root]
+Package=Internet Package 1
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Program Files\Microsoft Visual Studio\VB98

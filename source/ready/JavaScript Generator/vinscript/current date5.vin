@@ -1,0 +1,11 @@
+<!--Display the current date in European format.--->
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+  var today = new Date()
+  var year = today.getYear()
+  if(year<1000) year+=1900
+     
+  document.write(today.getDate() + "." + 
+                 (today.getMonth()+1) + "." + (year+"").substring(2,4))
+//-->
+</SCRIPT>

@@ -1,0 +1,314 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+	<param name="FrameName" value="right">
+	<param name="SiteType" value="index">
+</object>
+<ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Address">
+		<param name="Name" value="rgpv">
+		<param name="Local" value="Credits.htm#rgpv">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Administrator">
+			<param name="Name" value="sysadmin">
+			<param name="Local" value="Step4.htm#sysadmin">
+			<param name="URL" value="">
+			<param name="Name" value="sysadcom">
+			<param name="Local" value="Tutorial.htm#sysadcom">
+			<param name="URL" value="">
+			<param name="Name" value="sysadmin">
+			<param name="Local" value="Tutorial.htm#sysadmin">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Administrator Company">
+		<param name="Name" value="sysadcom">
+		<param name="Local" value="Step4.htm#sysadcom">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Application Name">
+			<param name="Name" value="appname">
+			<param name="Local" value="Step1.htm#appname">
+			<param name="URL" value="">
+			<param name="Name" value="appname">
+			<param name="Local" value="Tutorial.htm#appname">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Bharat">
+		<param name="Name" value="india">
+		<param name="Local" value="Credits.htm#india">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Bhopal">
+		<param name="Name" value="bhopal">
+		<param name="Local" value="Credits.htm#bhopal">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Company">
+			<param name="Name" value="comname">
+			<param name="Local" value="Step1.htm#comname">
+			<param name="URL" value="">
+			<param name="Name" value="comname">
+			<param name="Local" value="Tutorial.htm#comname">
+			<param name="URL" value="">
+			<param name="Name" value="sysadcom">
+			<param name="Local" value="Tutorial.htm#sysadcom">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="credit">
+			<param name="Name" value="credit">
+			<param name="Local" value="Credits.htm#credit">
+			<param name="URL" value="">
+			<param name="Name" value="Credits">
+			<param name="Local" value="Credits.htm">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Dll">
+		<param name="Name" value="System_Files">
+		<param name="Local" value="Step3.htm#System_Files">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="email">
+		<param name="Name" value="email">
+		<param name="Local" value="Credits.htm#email">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Finishing Message">
+		<param name="Name" value="message">
+		<param name="Local" value="Step1.htm#message">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Finishing Screen">
+		<param name="Name" value="reboot">
+		<param name="Local" value="Step5.htm#reboot">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Generate">
+			<param name="Name" value="Generate">
+			<param name="Local" value="Step4.htm#Generate">
+			<param name="URL" value="">
+			<param name="Name" value="Generate">
+			<param name="Local" value="Tutorial.htm#Generate">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="How to make setup">
+		<param name="Name" value="Tutorial">
+		<param name="Local" value="Tutorial.htm">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Image Message">
+		<param name="Name" value="message">
+		<param name="Local" value="Step1.htm#message">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="India">
+		<param name="Name" value="india">
+		<param name="Local" value="Credits.htm#india">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Installation Directory">
+		<param name="Name" value="System_Files">
+		<param name="Local" value="Step3.htm#System_Files">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="introduction">
+		<param name="Name" value="Introduction">
+		<param name="Local" value="Introduction.htm">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="kotiya">
+		<param name="Name" value="vinod">
+		<param name="Local" value="Credits.htm#vinod">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Launch Application">
+			<param name="Name" value="launchapp">
+			<param name="Local" value="Step5.htm#launchapp">
+			<param name="URL" value="">
+			<param name="Name" value="launchapp">
+			<param name="Local" value="Tutorial.htm#launchapp">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Learn Making Setup">
+		<param name="Name" value="Tutorial">
+		<param name="Local" value="Tutorial.htm">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Lisence Agreement">
+		<param name="Name" value="lisenceagree">
+		<param name="Local" value="Step2.htm#lisenceagree">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Message">
+		<param name="Name" value="message">
+		<param name="Local" value="Step1.htm#message">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="My App">
+		<param name="Name" value="appname">
+		<param name="Local" value="Tutorial.htm#appname">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="ocx">
+		<param name="Name" value="System_Files">
+		<param name="Local" value="Step3.htm#System_Files">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Output Directory">
+		<param name="Name" value="output">
+		<param name="Local" value="Step5.htm#output">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Read Me">
+			<param name="Name" value="Readme">
+			<param name="Local" value="Step5.htm#Readme">
+			<param name="URL" value="">
+			<param name="Name" value="readme">
+			<param name="Local" value="Step2.htm#readme">
+			<param name="URL" value="">
+			<param name="Name" value="Readme">
+			<param name="Local" value="Tutorial.htm#Readme">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Reboot">
+			<param name="Name" value="reboot">
+			<param name="Local" value="Step5.htm#reboot">
+			<param name="URL" value="">
+			<param name="Name" value="reboot">
+			<param name="Local" value="Tutorial.htm#reboot">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Registaration">
+		<param name="Name" value="RegCode">
+		<param name="Local" value="Step4.htm#RegCode">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Registaration Code">
+			<param name="Name" value="RegCode">
+			<param name="Local" value="Step4.htm#RegCode">
+			<param name="URL" value="">
+			<param name="Name" value="RegCode">
+			<param name="Local" value="Tutorial.htm#RegCode">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Registry">
+		<param name="Name" value="RegCode">
+		<param name="Local" value="Step4.htm#RegCode">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="RGPV">
+		<param name="Name" value="rgpv">
+		<param name="Local" value="Credits.htm#rgpv">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Run In Background">
+			<param name="Name" value="runback">
+			<param name="Local" value="Step5.htm#runback">
+			<param name="URL" value="">
+			<param name="Name" value="runback">
+			<param name="Local" value="Tutorial.htm#runback">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Shortcuts">
+			<param name="Name" value="Shortcuts">
+			<param name="Local" value="Step3.htm#Shortcuts">
+			<param name="URL" value="">
+			<param name="Name" value="Shortcuts">
+			<param name="Local" value="Tutorial.htm#Shortcuts">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Software Information">
+		<param name="Name" value="softwareinfo">
+		<param name="Local" value="Step2.htm#softwareinfo">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Source Dir">
+			<param name="Name" value="Source_Directory">
+			<param name="Local" value="Step3.htm#Source_Directory">
+			<param name="URL" value="">
+			<param name="Name" value="Source_Directory">
+			<param name="Local" value="Tutorial.htm#Source_Directory">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Source Directory">
+		<param name="Name" value="Source_Directory">
+		<param name="Local" value="Step3.htm#Source_Directory">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Step1">
+		<param name="Name" value="Step1">
+		<param name="Local" value="Tutorial.htm#Step1">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Step2">
+		<param name="Name" value="Step2">
+		<param name="Local" value="Tutorial.htm#Step2">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Step3">
+		<param name="Name" value="step3">
+		<param name="Local" value="Tutorial.htm#step3">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Step4">
+		<param name="Name" value="Step4">
+		<param name="Local" value="Tutorial.htm#Step4">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Step5">
+		<param name="Name" value="Step5">
+		<param name="Local" value="Tutorial.htm#Step5">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="System Files">
+			<param name="Name" value="System_Files">
+			<param name="Local" value="Step3.htm#System_Files">
+			<param name="URL" value="">
+			<param name="Name" value="System_Files">
+			<param name="Local" value="Tutorial.htm#System_Files">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Tutorial">
+		<param name="Name" value="Tutorial">
+		<param name="Local" value="Tutorial.htm">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Version">
+			<param name="Name" value="version">
+			<param name="Local" value="Step1.htm#version">
+			<param name="URL" value="">
+			<param name="Name" value="version">
+			<param name="Local" value="Tutorial.htm#version">
+			<param name="URL" value="">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="vinod">
+		<param name="Name" value="vinod">
+		<param name="Local" value="Credits.htm#vinod">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="website">
+		<param name="Name" value="web">
+		<param name="Local" value="Credits.htm#web">
+	</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="Welcome Message">
+		<param name="Name" value="message">
+		<param name="Local" value="Step1.htm#message">
+	</object>
+</ul>
+</html>

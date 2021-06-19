@@ -1,0 +1,206 @@
+<inputYes>
+<input1>
+Menu1 Name
+Menu1
+<input2>
+Menu2 Name
+Menu2
+<input3>
+Menu3 Name
+Menu3
+<input4>
+Menu4 Name
+Menu4
+<discription>
+A cool drop down menu. Edit the script to add your link to the menu.
+<end By:- vinod kotiya>
+<!-- Notes: Netscape 6 will not scroll when this script is used as a js file? -->
+
+<!-- 3 steps to follow -->
+
+<!-- 1:Put this stylesheet in to the head of your page.
+This sets the colour for the links in the drop down
+menus. Does not effect other links! -->
+
+<style type="text/css">
+<!--
+a.x:link, a.x:visited, a.x:active{color:#ffffff;text-decoration:none}
+//-->
+</style>
+
+<!-- 2: Use this as your body tag. Add your own bgcolor, link(standard), text colours etc.
+Alter the margins accordingly. -->
+
+<body marginheight="25" topmargin="25">
+
+<!-- 3: Paste the script as last thing in body of your page. -->
+
+<script language="javascript">
+<!-- Simple NavBar 2 - http://website.lineone.net/~kurt.grigg/javascript
+
+//!!!Edit the appearance here!!!
+ 
+MenuWidth=170;           //Individual menu width.
+MenuFont='Arial,Verdana';
+MenuFontSize=2;          //1 to 7 only, 2 probably big enough. 
+MenuFontColor='#ffffff';
+MenuBgColor='#5b7693';
+HighLight='#b4c3d4';
+Separater=2;             //Space around menus.
+Centre=true;             //true or false.
+
+//!!!Alter nothing here, go straight to "Links"!!!
+
+n4=(document.layers);
+n6=(document.getElementById&&!document.all);
+ie=(document.all);
+h=(ie)?document.body.clientHeight:window.innerHeight;
+w=(ie)?document.body.clientWidth:window.innerWidth;
+Titles=new Array()
+Links=new Array()
+
+algn1=(Centre)?'<center>':'';
+algn2=(Centre)?'</center>':'';
+
+function colour2(c){(n4)?c.bgColor=HighLight:c.style.background=HighLight}//
+function colour1(c){(n4)?c.bgColor=MenuBgColor:c.style.background=MenuBgColor}//
+
+var OpenLayer=(n4)?"<br><layer height=100% width=100% onMouseOver='colour1(this)'; onMouseOut='colour2(this)'>"+algn1:"<div style='height:auto;width:100%' onMouseOver='colour1(this)'; onMouseOut='colour2(this)'><font face="+MenuFont+" size="+MenuFontSize+" color="+MenuFontColor+">";
+var CloseLayer=(n4)?algn2+"</layer>":"</font></div>";
+
+var vs=(n4)?"<font face='Wingdings' color="+MenuBgColor+">n</font>":OpenLayer+"&nbsp;"+CloseLayer+"<font color="+MenuBgColor+">"+String.fromCharCode(9660)+"</font>";
+
+
+/*************************************Links here****************************************
+
+First off, alter the Titles to whatever. Add/delete as needed, make sure they're
+numbered in order.
+
+Now fill the Links with your er..links, as many as needed. Here's how.
+Example:
++OpenLayer+"<a href='http://www.google.com' class='x'>Search with Google</a>"+CloseLayer
+
+If you need to have quots etc in the link text make sure you escape them with a backslash.
+Example:
+...class='x'> What\'s new </a>"+C...
+
+***************************************************************************************/
+Titles[0]="input1";
+Titles[1]="input2";
+Titles[2]="input3";
+Titles[3]="input4";
+
+Links[0]=vs
++OpenLayer+"<a href='http://yahoo.com')' class='x'>Yahoo</a>"+CloseLayer
++OpenLayer+"<a href='http://google.com')' class='x'>Google</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
+
+Links[1]=vs
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
+
+
+Links[2]=vs
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
+
+Links[3]=vs
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
++OpenLayer+"<a href='javascript:void(\"\")' class='x'>Your links</a>"+CloseLayer
+
+
+//!!!Alter anything past this point!!!
+
+w1=(MenuWidth+Separater)*Titles.length;
+w2=w/2;
+i1=w2-MenuWidth-Separater-w1/2;
+i2=w2-MenuWidth-Separater-w1/2;
+s1=MenuWidth+Separater;
+s2=MenuWidth+Separater;
+if (w1 > w2*2){i1=-MenuWidth;i2=-MenuWidth}
+vy=(n4)?'show':'visible';
+vn=(n4)?'hide':'hidden';
+
+//Don't mess about with N4, just use layers.
+if (n4){
+for (i=0; i < Titles.length; i++){
+document.write("<layer name='lnks"+i+"' top=0 left="+(i2+=s2)+" "
++" width="+MenuWidth+" bgcolor="+HighLight+" visibility=hide"
++" onMouseOver='this.visibility=vy; var cd=this.id.length-1; var ab=this.id.charAt(cd); H(ab)' "
++" onMouseOut='this.visibility=vn; var ef=this.id.length-1; var gh=this.id.charAt(ef); B(gh)'>"
++algn1+"<font face="+MenuFont+" size="+MenuFontSize+">"
++"&nbsp;<br>"+Links[i]+"</font>"+algn2+"</layer>");
+document.write("<layer name='ttls"+i+"' top=0 left="+(i1+=s1)+" height=0 " 
++"width="+MenuWidth+" bgcolor="+MenuBgColor+" "
++"onMouseOver=\"this.bgColor=HighLight; var e=this.id.length-1; var d=this.id.charAt(e); On(d)\" "
++"onMouseOut=\"this.bgColor=MenuBgColor; var e=this.id.length-1; var d=this.id.charAt(e); Off(d)\">"
++algn1+"<font face="+MenuFont+" size="+MenuFontSize+" color="+MenuFontColor+">"
++Titles[i]+"</font>"+algn2+"</layer>");                                       
+}
+function On(x){for (i=0; i < Titles.length; i++)document.layers['lnks'+x].visibility=vy}
+function Off(x){for (i=0; i < Titles.length; i++)document.layers['lnks'+x].visibility=vn}
+function B(y){for (i=0; i < Titles.length; i++)document.layers['ttls'+y].bgColor=MenuBgColor}
+function H(y){for (i=0; i < Titles.length; i++)document.layers['ttls'+y].bgColor=HighLight}
+}
+if (!n4){
+for (i=0; i < Titles.length; i++){
+document.write("<div id='lnks"+i+"' style='position:absolute;"
++"top:0px;left:"+(i2+=s2)+"px;width:"+MenuWidth+"px;"
++"background:"+HighLight+";visibility:hidden'" 
++" onMouseOver='this.style.visibility=vy; document.getElementById(\"ttls"+i+"\").style.background=HighLight';"
++" onMouseOut='this.style.visibility=vn; document.getElementById(\"ttls"+i+"\").style.background=MenuBgColor'>"
++algn1+Links[i]+algn2+"</div>");
+document.write("<div id='ttls"+i+"' style='position:absolute;top:0px;left:"+(i1+=s1)+"px;height:auto;width:"+MenuWidth+"px;"
++"background:"+MenuBgColor+";cursor:default'"
++" onMouseOver='document.getElementById(\"lnks"+i+"\").style.visibility=vy;this.style.background=HighLight'" 
++" onMouseOut='document.getElementById(\"lnks"+i+"\").style.visibility=vn;this.style.background=MenuBgColor'>"
++algn1+"<font face="+MenuFont+" size="+MenuFontSize+" color="+MenuFontColor+">"+Titles[i]+"</font>"+algn2+"</div>");
+}
+}
+function Scroll(){
+sy=(ie)?document.body.scrollTop:window.pageYOffset;
+for (i=0; i < Titles.length; i++){
+if (n4){
+ document.layers['ttls'+i].top=Separater+sy;
+ document.layers['lnks'+i].top=Separater+sy;
+ }
+else{
+ document.getElementById("ttls"+i).style.top=Separater+sy;
+ document.getElementById("lnks"+i).style.top=Separater+sy;
+ }
+}
+setTimeout('Scroll()',150)
+}
+Scroll();
+window.onresize=new Function("window.location.reload()");
+
+
+if (!n4){
+for (i=0; i < document.links.length; i++){
+ if (document.links[i].href == this.window.location.href)
+  {
+  document.links[i].style.color=MenuBgColor;
+  document.links[i].style.cursor='crosshair';
+  //document.links[i].innerHTML+=' -';
+  //alert(i+' '+document.links[i].href);
+  break;
+  }
+ }
+}
+//-->
+</script>

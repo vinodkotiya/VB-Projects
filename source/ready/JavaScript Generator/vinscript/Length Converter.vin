@@ -1,0 +1,86 @@
+<!--LENGTH UNITS CONVERTER-->
+
+<!-- This goes in the HEAD of the html file -->
+
+<script language="javascript" type="text/javascript">
+<!-- Copyright 2001, Sandeep Gangadharan (sivam@bol.net.in) -->
+<!-- For more free scripts go to http://web1.mtnl.net.in/~sivam/ -->
+
+<!--
+function milliConv() {
+document.conv.centi.value = Math.round(((document.conv.milli.value) * 0.1) * 100000) / 100000;
+document.conv.inch.value = Math.round(((document.conv.milli.value) * 0.03937) * 100000) / 100000;
+document.conv.feet.value = Math.round(((document.conv.milli.value) * 0.003281) * 100000) / 100000;
+document.conv.meter.value = Math.round(((document.conv.milli.value) * 0.001) * 100000) / 100000; }
+
+function centiConv() {
+document.conv.milli.value = Math.round(((document.conv.centi.value) * 10) * 100000) / 100000;
+document.conv.inch.value = Math.round(((document.conv.centi.value) * 0.393701) * 100000) / 100000;
+document.conv.feet.value = Math.round(((document.conv.centi.value) * 0.032808) * 100000) / 100000;
+document.conv.meter.value = Math.round(((document.conv.centi.value) * 0.01) * 100000) / 100000; }
+
+function inchConv() {
+document.conv.milli.value = Math.round(((document.conv.inch.value) * 25.4) * 100000) / 100000;
+document.conv.centi.value = Math.round(((document.conv.inch.value) * 2.54) * 100000) / 100000;
+document.conv.feet.value = Math.round(((document.conv.inch.value) * 0.083333) * 100000) / 100000;
+document.conv.meter.value = Math.round(((document.conv.inch.value) * 0.0254) * 100000) / 100000; }
+
+function feetConv() {
+document.conv.milli.value = Math.round(((document.conv.feet.value) * 304.8) * 100000) / 100000;
+document.conv.centi.value = Math.round(((document.conv.feet.value) * 30.48) * 100000) / 100000;
+document.conv.inch.value = Math.round(((document.conv.feet.value) * 12) * 100000) / 100000;
+document.conv.meter.value = Math.round(((document.conv.feet.value) * 0.3048) * 100000) / 100000; }
+
+function meterConv() {
+document.conv.milli.value = Math.round(((document.conv.meter.value) * 1000) * 100000) / 100000;
+document.conv.centi.value = Math.round(((document.conv.meter.value) * 100) * 100000) / 100000;
+document.conv.inch.value = Math.round(((document.conv.meter.value) * 39.370079) * 100000) / 100000;
+document.conv.feet.value = Math.round(((document.conv.meter.value) * 3.28084) * 100000) / 100000; }
+// -->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<!-- This goes into the BODY of the file -->
+
+	<form name="conv">
+	  <table border="0" bgcolor="#c0c0c0" width="370" cellspacing="0">
+	    <tr>
+               <td bgcolor="#000080" colspan="5"><font size="2" face="verdana, arial, helvetica, sans-serif" color="ffffff">
+               &nbsp;<b>Length Units Converter</b></font>
+               </td>
+            </tr>
+            <tr>
+               <td>&nbsp;<font size="1" face="verdana, arial, helvetica, sans-serif"><b>Millimeters</b></font>&nbsp;</td>
+               <td>&nbsp;<font size="1" face="verdana, arial, helvetica, sans-serif"><b>Centimeters</b></font>&nbsp;</td>
+               <td>&nbsp;<font size="1" face="verdana, arial, helvetica, sans-serif"><b>Inches</b></font>&nbsp;</td>
+               <td>&nbsp;<font size="1" face="verdana, arial, helvetica, sans-serif"><b>Feet</b></font>&nbsp;</td>
+               <td>&nbsp;<font size="1" face="verdana, arial, helvetica, sans-serif"><b>Meters</b></font>&nbsp;</td>
+            </tr>
+            <tr>
+               <td align="center">
+                &nbsp;<input type="text" size="9" name="milli" value="00" onChange="milliConv();" />&nbsp;
+               </td>
+               <td align="center">
+                &nbsp;<input type="text" size="9" name="centi" value="00" onChange="centiConv();" />&nbsp;
+               </td>
+               <td align="center">
+                &nbsp;<input type="text" size="9" name="inch" value="00" onChange="inchConv();" />&nbsp;
+               </td>
+               <td align="center">
+                &nbsp;<input type="text" size="9" name="feet" value="00" onChange="feetConv();" />&nbsp;
+               </td>
+               <td align="center">
+                &nbsp;<input type="text" size="9" name="meter" value="00" onChange="meterConv();"
+                                                                          onBlur="document.conv.milli.focus();" />&nbsp;
+               </td>
+            </tr>
+            <tr>
+               <td colspan="5" align="center">
+                <input type="button" onClick="reset();" value="Reset" />
+               </td>
+            </tr>
+          </table>
+	</form>

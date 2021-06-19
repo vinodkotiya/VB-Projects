@@ -1,0 +1,92 @@
+<inputYes>
+<input1>
+Amount of flakes
+20
+<input2>
+image1
+path of image1.jpg
+<input3>
+image2
+path of image2.jpg
+<input4>
+image3
+path of image3.jpg
+<discription>
+Snow falling effect for the background.
+<end By:- vinod kotiya>
+<script language="JavaScript">
+<!-- fall Script by kurt.grigg@virgin.net
+Amount=input1; //Smoothness! depends on image file size, the smaller the size the more you can use!
+//Pre-load your image below!
+Image0=new Image();
+Image0.src="input2";
+Image1=new Image();
+Image1.src="input3";
+Image2=new Image();
+Image2.src="input4";
+grphcs=new Array(3)
+grphcs[0]="input2"
+grphcs[1]="input3"
+grphcs[2]="input4"
+
+Ypos=new Array();
+Xpos=new Array();
+Speed=new Array();
+Step=new Array();
+Cstep=new Array();
+ns=(document.layers)?1:0;
+if (ns){
+for (i = 0; i < Amount; i++){
+var P=Math.floor(Math.random()*grphcs.length);
+rndPic=grphcs[P];
+document.write("<LAYER NAME='sn"+i+"' LEFT=0 TOP=0><img src="+rndPic+"></LAYER>");
+}
+}
+else{
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i = 0; i < Amount; i++){
+var P=Math.floor(Math.random()*grphcs.length);
+rndPic=grphcs[P];
+document.write('<img id="si" src="'+rndPic+'" style="position:absolute;top:0px;left:0px">');
+}
+document.write('</div></div>');
+}
+WinHeight=(document.layers)?window.innerHeight:window.document.body.clientHeight;
+WinWidth=(document.layers)?window.innerWidth:window.document.body.clientWidth;
+for (i=0; i < Amount; i++){                                                                
+ Ypos[i] = Math.round(Math.random()*WinHeight);
+ Xpos[i] = Math.round(Math.random()*WinWidth);
+ Speed[i]= Math.random()*3+2;
+ Cstep[i]=0;
+ Step[i]=Math.random()*0.1+0.05;
+}
+function fall(){
+var WinHeight=(document.layers)?window.innerHeight:window.document.body.clientHeight;
+var WinWidth=(document.layers)?window.innerWidth:window.document.body.clientWidth;
+var hscrll=(document.layers)?window.pageYOffset:document.body.scrollTop;
+var wscrll=(document.layers)?window.pageXOffset:document.body.scrollLeft;
+for (i=0; i < Amount; i++){
+sy = Speed[i]*Math.sin(90*Math.PI/180);
+sx = Speed[i]*Math.cos(Cstep[i]);
+Ypos[i]+=sy;
+Xpos[i]+=sx; 
+if (Ypos[i] > WinHeight){
+Ypos[i]=-60;
+Xpos[i]=Math.round(Math.random()*WinWidth);
+Speed[i]=Math.random()*5+2;
+}
+if (ns){
+document.layers['sn'+i].left=Xpos[i];
+document.layers['sn'+i].top=Ypos[i]+hscrll;
+}
+else{
+si[i].style.pixelLeft=Xpos[i];
+si[i].style.pixelTop=Ypos[i]+hscrll;
+} 
+Cstep[i]+=Step[i];
+}
+setTimeout('fall()',10);
+}
+//-->
+</script>
+<body bgcolor="#ffffff" onLoad="fall()">

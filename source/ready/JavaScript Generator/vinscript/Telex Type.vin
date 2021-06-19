@@ -1,0 +1,80 @@
+<inputYes>
+<input1>
+Message1
+Enter your message here ...
+<input2>
+Message1
+Enter your message here ...
+<input3>
+Speed
+40
+<input4>
+Size
+4
+<description>
+Type out the messages.
+<end By:- vinod kotiya>
+<script language="JavaScript">
+<!-- Telex type 2 kurt.grigg@virgin.net
+
+fontfamily='Verdana';
+cursorcolour='#ffffff';
+fontcolour='#0097ff';
+delaybetweenmessages=30;//This alters if typespeed is altered!!!
+containerwidth=600;//Must be big enough to accomadate the longest message!!!
+containerheight=30;
+typespeed=input3
+fontsize=input4; //1-7
+msg=new Array()
+msg[0]="input1";
+msg[1]="input2";
+
+//Alter nothing past here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ns=(document.layers);
+ie=(document.all);
+themessage='';
+if (ns)themessage="<layer name=Tns width="+containerwidth+" height="+containerheight+">&nbsp;</layer>";
+if (ie){
+themessage="<div id='Tie' style='position:relative;"
++"width:"+containerwidth+";height:"+containerheight+"'></div>";
+}
+timer=0;
+next=0;
+pos=0;
+a='/';
+b='\\';
+c='';
+cursor=a;
+fc1="<font face="+fontfamily+" font color="+fontcolour+" size="+fontsize+">";
+fc2="<font face="+fontfamily+" font color="+cursorcolour+" size="+fontsize+">";
+function Type(){
+if (timer == 0) pos++;
+if (msg[next].substring(pos-1,pos) == " ") pos++;
+if (pos > msg[next].length) {timer++}  
+if (timer > delaybetweenmessages) {next++;pos=0;timer=0;cursor=a} 
+if (next == msg.length) next=0;
+if (timer != 0) {cursor=c} 
+if (cursor==a){cursor=b}
+else if (cursor==b){cursor=a}
+text=msg[next].substring(0,pos);
+if (ns){
+document.layers.Tns.document.open();
+document.layers.Tns.document.write(fc1+''+text+'</font>'+fc2+''+cursor+'</font><br>');
+document.layers.Tns.document.close();
+}
+if (ie){
+Tie.innerHTML=fc1+''+text+'</font>'+fc2+''+cursor+'</font>';
+}
+setTimeout('Type()',typespeed);
+}
+// -->
+</script>
+
+</head>
+<body bgcolor=#000000 background="BckGrnd.jpg" onLoad="Type()">
+
+<script language="JavaScript">
+<!-- 
+document.write(themessage)
+// -->
+</script>

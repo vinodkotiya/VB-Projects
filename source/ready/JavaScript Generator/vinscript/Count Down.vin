@@ -1,0 +1,44 @@
+<inputYes>
+<input1>
+Set Date
+May 24 2003 00:00:00
+<input2>
+no
+no
+<input3>
+no
+no
+<input4>
+no
+no
+<discription>
+Count down to a specific day.
+<end By:- vinod kotiya>
+<!--COUNTDOWN-->
+
+<!-- This goes in the HEAD of the html file -->
+
+<script language="javascript">
+<!-- Copyright 2001, Sandeep Gangadharan (sivam@bol.net.in) -->
+<!-- For more free scripts go to http://web1.mtnl.net.in/~sivam/ -->
+
+<!--
+function count() {
+	now = new Date();
+setdate = new Date("input1");
+
+day = (setdate - now) / 1000 / 60 / 60 / 24;
+	day = Math.round(day);
+  document.write("There are " + "<b>" + day + "</b>" + " day/s to go!");
+  }
+// -->
+</script>
+
+<!-- Substitute the above date "Jul 01 2001 00:00:00" with the date you want to
+countdown to -->
+
+
+<!-- This goes into the BODY of the file -->
+
+<font face="verdana, arial, helvetica, sans-serif" size="2">
+<script>count()</script></font>

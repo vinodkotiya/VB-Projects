@@ -1,0 +1,92 @@
+<inputYes>
+<input1>
+Message1
+Enter your message here ...
+<input2>
+Message2
+Enter your message here ...
+<input3>
+Message3
+Enter your message here ...
+<input4>
+Message4
+Enter your message here ...
+<description>
+Flashlike text animation.
+<end By:- vinod kotiya>
+<script>
+// CREDITS:
+// SuperScroller
+// by Urs Dudli and Peter Gehrig 
+// Copyright (c) 2001 Peter Gehrig and Urs Dudli. All rights reserved.
+// Permission given to use the script provided that this notice remains as is.
+// Additional scripts can be found at http://www.24fun.com
+// info@24fun.com
+// 11/1/2001
+
+// IMPORTANT: 
+// If you add this script to a script-library or a script-archive 
+// you are required to insert a highly visible link to http://www.24fun.com
+// right into the webpage where the script
+// will be displayed.
+
+///////////////////////////////////////////////////////////////////////////
+// CONFIGURATION STARTS HERE
+///////////////////////////////////////////////////////////////////////////
+
+// your messages. Add as many as you like.
+var messages = new Array()
+messages[0] = "input1"
+messages[1] = "input2"
+messages[2] = "input3"
+messages[3] = "input4"
+
+//Alter nothing past here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ns=(document.layers);
+ie=(document.all);
+themessage='';
+if (ns)themessage="<layer name=Tns width="+containerwidth+" height="+containerheight+">&nbsp;</layer>";
+if (ie){
+themessage="<div id='Tie' style='position:relative;"
++"width:"+containerwidth+";height:"+containerheight+"'></div>";
+}
+timer=0;
+next=0;
+pos=0;
+a='/';
+b='\\';
+c='';
+cursor=a;
+fc1="<font face="+fontfamily+" font color="+fontcolour+" size="+fontsize+">";
+fc2="<font face="+fontfamily+" font color="+cursorcolour+" size="+fontsize+">";
+function Type(){
+if (timer == 0) pos++;
+if (msg[next].substring(pos-1,pos) == " ") pos++;
+if (pos > msg[next].length) {timer++}  
+if (timer > delaybetweenmessages) {next++;pos=0;timer=0;cursor=a} 
+if (next == msg.length) next=0;
+if (timer != 0) {cursor=c} 
+if (cursor==a){cursor=b}
+else if (cursor==b){cursor=a}
+text=msg[next].substring(0,pos);
+if (ns){
+document.layers.Tns.document.open();
+document.layers.Tns.document.write(fc1+''+text+'</font>'+fc2+''+cursor+'</font><br>');
+document.layers.Tns.document.close();
+}
+if (ie){
+Tie.innerHTML=fc1+''+text+'</font>'+fc2+''+cursor+'</font>';
+}
+setTimeout('Type()',typespeed);
+}
+// -->
+</script>
+
+</head>
+<body bgcolor=#000000 background="BckGrnd.jpg" onLoad="Type()">
+
+<script language="JavaScript">
+<!-- 
+document.write(themessage)
+// -->
+</script>

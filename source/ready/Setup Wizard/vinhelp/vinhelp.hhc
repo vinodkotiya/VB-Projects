@@ -1,0 +1,67 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+	<param name="Window Styles" value="0x800002">
+	<param name="ExWindow Styles" value="0x100">
+</object>
+<ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="VIN Setup Wizard">
+	</object>
+	<ul>
+		<li><object type="text/sitemap">
+			<param name="Name" value="Introduction">
+			<param name="Local" value="Introduction.htm">
+		</object>
+		<li><object type="text/sitemap">
+			<param name="Name" value="Step1">
+			<param name="Local" value="Step1.htm">
+		</object>
+		<li><object type="text/sitemap">
+			<param name="Name" value="Step2">
+			<param name="Local" value="Step2.htm">
+		</object>
+		<li><object type="text/sitemap">
+			<param name="Name" value="Step3">
+			<param name="Local" value="Step3.htm">
+		</object>
+		<li><object type="text/sitemap">
+			<param name="Name" value="Step4">
+			<param name="Local" value="Step4.htm">
+		</object>
+		<li><object type="text/sitemap">
+			<param name="Name" value="Step5">
+			<param name="Local" value="Step5.htm">
+		</object>
+		<li><object type="text/sitemap">
+			<param name="Name" value="Tutorial">
+		</object>
+		<ul>
+			<li><object type="text/sitemap">
+				<param name="Name" value="Tutorial#Step1">
+				<param name="Local" value="Tutorial.htm#Step1">
+			</object>
+			<li><object type="text/sitemap">
+				<param name="Name" value="Tutorial#Step2">
+				<param name="Local" value="Tutorial.htm#Step2">
+			</object>
+			<li><object type="text/sitemap">
+				<param name="Name" value="Tutorial#step3">
+				<param name="Local" value="Tutorial.htm#step3">
+			</object>
+			<li><object type="text/sitemap">
+				<param name="Name" value="Tutorial#Step4">
+				<param name="Local" value="Tutorial.htm#Step4">
+			</object>
+			<li><object type="text/sitemap">
+				<param name="Name" value="Tutorial#Step5">
+				<param name="Local" value="Tutorial.htm#Step5">
+			</object>
+		</ul>
+		<li><object type="text/sitemap">
+			<param name="Name" value="Credits">
+			<param name="Local" value="Credits.htm">
+		</object>
+	</ul>
+</ul>
+</html>

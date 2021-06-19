@@ -1,0 +1,34 @@
+<inputYes>
+<input1>
+Message
+Enter your message here ...
+<input2>
+no
+no
+<input3>
+no
+no
+<input4>
+no
+no
+<description>
+This script Scroll a message in the text box.
+<end By:- vinod kotiya>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- hide from old browsers
+var msg = "input1      "
+
+function scrollMsg(){  
+    document.scrollerForm.welcomeMsg.value = msg
+    msg = msg.substring(1, msg.length) + msg.substring(0, 1)
+    setTimeout("scrollMsg()", 150)
+    }
+//-->
+</SCRIPT>
+
+<BODY ONLOAD="scrollMsg()"> 
+
+<FORM NAME="scrollerForm">
+<INPUT TYPE="text" NAME="welcomeMsg" VALUE="" size=30>
+</FORM>
+

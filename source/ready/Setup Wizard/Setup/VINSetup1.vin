@@ -1,0 +1,118 @@
+Donot alter anything in this file.
+This File contains information about VIN Setup Wizard.
+Author: VINOD KOTIYA.
+Address: S-2 shrimaya apartment sector-b/363
+        Sarvdharm colony bhopal-42 india .
+Fone : +91-0755-2794428  .
+Email : vinodkotiya24@rediffmail.com
+Web : http:\\vinodkotiya.tripod.com
+Student: B.E. 3rd year 
+        Information Technology
+   Univercity Institute of Technology
+   Rajeev Gandhi Produogiki Vishwavidyalaya, BHOPAL
+***************************************
+<WELLCOME> 
+BANK
+1.0
+VINSOFT
+True
+Welcome To My App Installer
+ 1 
+ 0 
+ 16711680 
+wel.gif
+5
+True
+Installing My App
+ 1 
+ 0 
+ 65280 
+left.jpg
+</WELLCOME> 
+<AGREEMENT>
+<Software>
+
+
+</Software>
+<Lisence>
+
+
+</Lisence>
+<ReadME>
+
+
+</ReadMe>
+</AGREEMENT>
+<APPLICATION>
+C:\Program Files\VINSOFT
+<SystemFiles>
+
+</SystemFiles>
+<Shortcutvbscript>
+Set WShell = Wscript.CreateObject("Wscript.Shell")
+pos = InStrRev(wscript.ScriptFullName, "\")
+Path = Left(wscript.ScriptFullName, pos)
+Set Fsys = CreateObject("scripting.filesystemobject")
+strDesktop = WShell.SpecialFolders("Desktop")
+strStartup = WShell.SpecialFolders("Startup")
+strPrograms = WShell.SpecialFolders("Programs")
+If fSys.FolderExists(strDesktop & "\vinsoft") = False Then fSys.CreateFolder strDesktop & "\vinsoft"
+Set ShellLink = WShell.CreateShortcut(strDeskTop &"\vinsoft\bank.lnk")
+ShellLink.TargetPath = Path &"\bankmanage.exe"
+ShellLink.Save
+If fSys.FolderExists(strPrograms & "\vinsoft") = False Then fSys.CreateFolder strPrograms & "\vinsoft"
+Set ShellLink = WShell.CreateShortcut(strPrograms &"\vinsoft\bank.lnk")
+ShellLink.TargetPath = Path &"\bankmanage.exe"
+ShellLink.Save
+
+</Shortcutvbscript>
+</APPLICATION>
+<SYSTEM>
+True
+True
+True
+3333333333333333
+</SYSTEM>
+<END>
+ 0 
+False
+ 1 
+False
+bankmanage.exe
+ 0 
+ 0 
+register.exe
+False
+Thanking You .........
+ 1 
+ 0 
+ 16711680 
+
+3
+</END>
+Donot alter anything in this file.
+This File contains information about VIN Setup Wizard.
+Author: VINOD KOTIYA.
+Address: S-2 shrimaya apartment sector-b/363
+        Sarvdharm colony bhopal-42 india .
+Fone : +91-0755-2794428  .
+Email : vinodkotiya24@rediffmail.com
+Web : http:\\vinodkotiya.tripod.com
+Student: B.E. 3rd year 
+        Information Technology
+   Univercity Institute of Technology
+   Rajeev Gandhi Produogiki Vishwavidyalaya, BHOPAL
+***************************************
+***************************************
+***************************************
+***************************************
+***************************************
+***************************************
+***************************************
+***************************************
+***************************************
+***************************************
+***************************************
+***************************************
+***************************************
+***************************************

@@ -1,0 +1,269 @@
+<!---A Yearly Calendar -->
+
+
+<SCRIPT LANGUAGE=VBS>
+
+Sub JANUARY_onClick()
+
+    DisplayMonth(1)
+
+End Sub
+
+
+
+Sub FEBRUARY_onClick()
+
+    DisplayMonth(2)
+
+End Sub
+
+
+
+Sub MARCH_onClick()
+
+    DisplayMonth(3)
+
+End Sub
+
+
+
+Sub APRIL_onClick()
+
+    DisplayMonth(4)
+
+End Sub
+
+
+
+Sub MAY_onClick()
+
+    DisplayMonth(5)
+
+End Sub
+
+
+
+Sub JUNE_onClick()
+
+    DisplayMonth(6)
+
+End Sub
+
+
+
+Sub JULY_onClick()
+
+    DisplayMonth(7)
+
+End Sub
+
+
+
+Sub AUGUST_onClick()
+
+    DisplayMonth(8)
+
+End Sub
+
+
+
+Sub SEPTEMBER_onClick()
+
+    DisplayMonth(9)
+
+End Sub
+
+
+
+Sub OCTOBER_onClick()
+
+    DisplayMonth(10)
+
+End Sub
+
+
+
+Sub NOVEMBER_onClick()
+
+    DisplayMonth(11)
+
+End Sub
+
+
+
+Sub DECEMBER_onClick()
+
+    DisplayMonth(12)
+
+End Sub
+
+
+
+
+
+Sub DisplayMonth(imonth)
+
+dim MonthName(12)
+
+MonthName(1)="January"
+
+MonthName(2)="February"
+
+MonthName(3)="March"
+
+MonthName(4)="April"
+
+MonthName(5)="May"
+
+MonthName(6)="June"
+
+MonthName(7)="July"
+
+MonthName(8)="August"
+
+MonthName(9)="September"
+
+MonthName(10)="October"
+
+MonthName(11)="November"
+
+MonthName(12)="December"
+
+
+
+document.clear
+
+document.write "<CENTER>"
+
+document.write "<FONT FACE='Verdana' SIZE=5>"
+
+document.write MonthName(imonth) & " " & Year(date)
+
+document.write "<P>"
+
+document.write "<TABLE CELLPADDING=10 BORDER><TR>"
+
+document.write "<TD><B>Sun<TD><B>Mon<TD><B>Tue<TD><B>Wed<TD><B>Thu<TD><B>Fri<TD><B>Sat"
+
+document.write "<TR>"
+
+    firstdate=DateSerial(year(date), imonth, 1)
+
+    thisdate=firstdate
+
+    nextday=1
+
+    For cday=1 to 7
+
+        If WeekDay(thisdate)>cday Then
+
+            document.write "<TD></TD>"
+
+        else
+
+            document.write "<TD ALIGN=CENTER><FONT SIZE=3>" & nextday & "</TD>"
+
+            nextday=nextday+1
+
+            thisdate=DateSerial(year(date), imonth, nextday)
+
+        End If
+
+    Next 
+
+    document.write "<TR>"
+
+    weekDays=1
+
+    while month(thisdate)=imonth
+
+        document.write "<TD ALIGN=CENTER><FONT SIZE=3>" & nextday & "</TD>"
+
+        nextday=nextday+1
+
+        weekDays=weekDays+1
+
+        If weekDays>7 then
+
+            WeekDays=1
+
+            document.write "<TR>"
+
+        End If
+
+        thisdate=DateSerial(year(date), imonth, nextday)
+
+    wend
+
+document.write "</TABLE>"
+
+document.write "</CENTER>"
+
+document.close
+
+End Sub
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<FONT FACE="Comic Sans MS">
+
+<CENTER>
+
+<H1>Yearly Calendar</H1>
+
+Click on a month to see a weekly calendar
+
+<P>
+
+<FONT FACE="Verdana" SIZE=6>
+
+<TABLE CELLPADDING=10 BORDER>
+
+<TR>
+
+<COLGROUP>
+
+<COL ALIGN=CENTER>
+
+<COL ALIGN=CENTER>
+
+<COL ALIGN=CENTER>
+
+
+
+<TD><INPUT TYPE=BUTTON NAME="January" VALUE="JANUARY">
+
+<TD><INPUT TYPE=BUTTON NAME="February" VALUE="FEBRUARY">
+
+<TD><INPUT TYPE=BUTTON NAME="March" VALUE="MARCH">
+
+<TR>
+
+<TD><INPUT TYPE=BUTTON NAME="April" VALUE="APRIL">
+
+<TD><INPUT TYPE=BUTTON NAME="May" VALUE="MAY">
+
+<TD><INPUT TYPE=BUTTON NAME="June" VALUE="JUNE">
+
+<TR>
+
+<TD><INPUT TYPE=BUTTON NAME="July" VALUE="JULY">
+
+<TD><INPUT TYPE=BUTTON NAME="August" VALUE="AUGUST">
+
+<TD><INPUT TYPE=BUTTON NAME="September" VALUE="SEPTEMBER">
+
+<TR>
+
+<TD><INPUT TYPE=BUTTON NAME="October" VALUE="OCTOBER">
+
+<TD><INPUT TYPE=BUTTON NAME="November" VALUE="NOVEMBER">
+
+<TD><INPUT TYPE=BUTTON NAME="December" VALUE="DECEMBER">
+
+</TABLE>
+

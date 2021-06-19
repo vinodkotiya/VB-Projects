@@ -1,0 +1,31 @@
+<!---A simple GMT clock in a text box.--->
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+function jsClockGMT(){
+  // Copyright 1999 - 2001 by Ray Stott
+  // OK to use if this copyright is included
+  // Script available at http://www.crays.com/jsc
+   var time = new Date()
+   var gmtMS = time.getTime() + (time.getTimezoneOffset() * 60000)
+   var gmtTime =  new Date(gmtMS)
+   var hour = gmtTime.getHours()
+   var minute = gmtTime.getMinutes()
+   var second = gmtTime.getSeconds()
+   var temp = "" + ((hour < 10) ? "0" : "") + hour
+   temp += ((minute < 10) ? ":0" : ":") + minute
+   temp += ((second < 10) ? ":0" : ":") + second
+   document.clockFormGMT.digits.value = temp
+   setTimeout("jsClockGMT()",1000)
+   }  
+//-->
+
+</SCRIPT>
+<BODY ONLOAD="jsClockGMT()"> 
+
+<FORM NAME="clockFormGMT">
+<FONT face="Courier New,Courier" size=4>
+<INPUT TYPE="text" NAME="digits" SIZE=8 VALUE="Loading">
+GMT
+</FONT>
+</FORM>
+
